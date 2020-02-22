@@ -1,2 +1,2 @@
-# alexdjon.github.io
-Descrição sobre mim e detalhes sobre os meus projetos.
+# Portfolio
+Minha página para exibição dos meus projetos, protótipos e alguns detalhes sobre mim e o que eu faço :)
