@@ -203,6 +203,7 @@ header .languages .time li {
    width: 90%;
    text-align: center;
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
 }
 .dev .projects article {
@@ -228,8 +229,7 @@ header .languages .time li {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: flex-end;
-   
+   align-items: flex-end;   
 }
 .dev .social a {
    margin: 12px 25px 0 0;
@@ -237,4 +237,30 @@ header .languages .time li {
 .dev .social a i {
    font-size: 25px;
    color: #cccccc;
+}
+@media (max-width: 760px) {
+   .dev {
+      width: 90%;
+   }
+   .dev .title {
+      font-size: 25px;
+   }
+   .dev .subtitle {
+      font-size: 19px;
+   }
+   .dev .projects article h4 {
+      font-size: 12px;
+   }
+   .dev .social {
+      top: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;   
+   }
+   .dev .social a {
+      margin: 14px 5px;
+   }
+   .dev .social a i {
+      font-size: 26px;
+   }
 }
