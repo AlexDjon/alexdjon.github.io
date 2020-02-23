@@ -170,6 +170,7 @@ header .languages .time li {
 
 /* -- DEV -- */
 .dev {
+   z-index: 2;
    width: 450px;
    height: 100vh;
    display: flex;
@@ -222,6 +223,7 @@ header .languages .time li {
    text-transform: uppercase;
 }
 .dev .social {
+   z-index: -1;
    position: fixed;
    height: 100%;
    width: 100%;
