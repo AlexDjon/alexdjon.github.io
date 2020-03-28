@@ -1,0 +1,51 @@
+/* -- Definições Globais -- */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--grey-t1);
+}
+a {
+  color: var(--grey-t1);
+}
+
+body {
+  background-color: var(--white-t1);
+}
+
+.title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.title b {
+  font-weight: 600;
+}
+
+.circle-radius-t1 {
+  border-radius: 50%;
+}
+.circle-radius-t2 {
+  border-radius: 30%;
+}
+.circle-radius-t3 {
+  border-radius: 20%;
+}
