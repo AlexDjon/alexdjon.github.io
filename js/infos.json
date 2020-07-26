@@ -2,26 +2,69 @@
   "projetos": [
     { 
       "nome": "Anota Tudo", 
+      "recente": true,
       "link": "https://github.com/AlexDjon/Anota-Tudo", 
       "img": "https://raw.githubusercontent.com/AlexDjon/alexdjon.github.io/master/img/projetos/anotatudo.png", 
       "radius": true,
-      "externalImg": true
+      "externalImg": true,
+      "screenshot": "anotatudo.png",
+      "destaque": true
     },    
     { 
       "nome": "YoPopo", 
+      "recente": true,
       "link": "https://yopopo.site/", 
       "img": "yopopo.png",  
-      "radius": true
+      "radius": true,
+      "screenshot": "yopopo.png",
+      "destaque": true
     },
     { 
       "nome": "ChocoFestas", 
+      "recente": true,
       "link": "https://welcometoalex.space/choco/", 
-      "img": "chocofestas.png" 
+      "img": "chocofestas.png",
+      "screenshot": "chocofestas.png",
+      "destaque": false
     },
     { 
       "nome": "OmniStack 11.0", 
+      "recente": true,
       "link": "https://github.com/AlexDjon/Semana-OmniStack-11.0/", 
-      "img": "semanaomnistack11.png"
+      "img": "semanaomnistack11.png",
+      "screenshot": "bethehero.png",
+      "destaque": false
+    },    
+    { 
+      "nome": "MpDaiher (In Dev)", 
+      "recente": false,
+      "dev": true,
+      "link": "", 
+      "img": "",
+      "screenshot": "mpdaiher.png",
+      "destaque": true      
+    }
+  ],
+  "redes": [
+    {
+      "link": "https://api.whatsapp.com/send?phone=5545998031093",
+      "iconType": "fab",
+      "icon": "fa-whatsapp"
+    },
+    {
+      "link": "https://www.linkedin.com/in/alex-djonata-684405151/",
+      "iconType": "fab",
+      "icon": "fa-linkedin"
+    },
+    {
+      "link": "https://github.com/AlexDjon",
+      "iconType": "fab",
+      "icon": "fa-github"
+    },
+    {
+      "link": "mailto:alexdjonata30@gmail.com",
+      "iconType": "fas",
+      "icon": "fa-envelope"
     }
   ]
 }

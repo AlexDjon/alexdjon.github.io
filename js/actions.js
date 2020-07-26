@@ -44,11 +44,56 @@ function adicionarProjeto(projeto) {
   document.querySelector('.lista_de_cartoes').appendChild(full)
 }
 
+function adicionarDestaque(projeto) {
+  const li = newElem('li')
+  li.style.backgroundImage = `url(img/screenshots/${projeto.screenshot})`
+  
+  const info = newElem('div', 'info')
+  info.textContent = projeto.nome
+
+  li.appendChild(info)
+  if(!projeto.dev) {
+    li.addEventListener('click', () => {
+      window.open(projeto.link, '_blank')
+    })
+  }
+
+  const list = document.querySelector('.projetos-destaque .list')
+  list.appendChild(li)
+}
+
+function adicionarRede(rede) {
+  const redesList = document.querySelector('.redes')
+
+  const li = newElem('li')
+  const a = newElem('a')
+  a.href = rede.link
+  a.target = "_blank"
+
+  const icon = newElem('i', rede.iconType)
+  icon.classList.add(rede.icon)
+  a.appendChild(icon)
+  li.appendChild(a)
+
+  redesList.appendChild(li)
+}
+
 function exibir(data, type) {
   if(type == 'projetos') {
     for(projeto of data) {
-      adicionarProjeto(projeto)
+      if(projeto.recente) {
+        adicionarProjeto(projeto)
+      }
+      if(projeto.destaque) {
+        adicionarDestaque(projeto)
+      }
     }
+  }
+  else if(type == 'redes') {
+    data.forEach(rede => {
+      console.log(rede)
+      adicionarRede(rede)
+    })   
   }
 }
 
@@ -70,19 +115,19 @@ getInfos()
 
 
 
-function checkMobile(x) {
+function checkMobile() {
   const mobile = window.matchMedia("(max-width: 800px)")
 
-  if (mobile) {    
+  if (mobile.matches) {    
     const text = document.querySelector('.apresentacao h2')
     const alteredText = text.textContent.replace('/', '&')
 
     text.textContent = alteredText
 
     // Sobre Line
-    const sobreH = document.querySelector('.sobre').clientHeight
-    const sobreLine = document.querySelector('.sobre .line')
-    sobreLine.style.marginTop = `${sobreH+25}px`
+    // const sobreH = document.querySelector('.sobre').clientHeight
+    // const sobreLine = document.querySelector('.sobre .line')
+    // sobreLine.style.marginTop = `${sobreH/2}px`
   }
 }
 
