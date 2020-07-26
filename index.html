@@ -7,28 +7,30 @@
   <meta name='description' content='Conheça um pouco sobre mim e o que eu faço!'>
   <meta name='keywords' content='alex, djonata, portfólio, trabalhos, protótipos, projetos'>
   <meta name='robots' content='index, fixed'>
-  <meta name='theme-color' content='#181818'>
+  <meta name='theme-color' content='#8E0AFE'>
 
   <!-- OgType -->
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='YoPopo - Caricaturas, Avatares e Ilustrações'>
-  <meta property='og:description' content='Consiga seu desenho da maneira que você sempre quis!'>
-  <meta property='og:site_name' content='Portfólio do Alex'>
-  <meta property='og:image' content='img/icon.png'>
+  <meta property='og:title' content="Alex' Space">
+  <meta property='og:description' content='Conheça mais sobre mim!'>
+  <meta property='og:site_name' content="Alex' Space">
+  <meta property='og:image' content='img/alex.jpg'>
   <meta property='og:image:type' content='image/png'>
   <meta property='og:image:width' content='400'>
   <meta property='og:image:height' content='400'>
-  <title>Portfólio - Alex Djonata</title>
+  <title>Alex' Space</title>
 
   <!-- Site Links -->
   <link rel='shortcut icon' href='img/icon.png'>
   <link rel='stylesheet' href='css/global.css'>
+  <link rel='stylesheet' href='css/animations.css'>
   <link rel='stylesheet' href='css/styles.css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <header class='cabecalho'>
     <div class='gradiente'>
+
       <div class='apresentacao'>
         <h3> < h1 > </h3>
         <h1> I'M ALEX </h1>
@@ -36,6 +38,7 @@
         <h3> < /h1 > </h3>
         <span class='line'></span>
       </div>
+      
       <img src='img/alex.jpg' alt='Alex Djonata'>
     </div>
     <div class='menu'>
@@ -44,9 +47,11 @@
     </div>
   </header>
 
+  
   <main class="conteudo">
 
-    <section class="projetos">
+    <!-- PROJETOS -->
+    <section class="projetos container">
       <h3 class='title'> <b>PROJETOS</b> RECENTES </h3>
       <article class="lista_de_cartoes">
       </article>
@@ -55,47 +60,54 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <!-- SOBRE MIM -->
+    <section class="container sobre" id="sobre">
       <div class="especial">
         <div></div>
         <h3 class='title'> <b>SOBRE</b> MIM </h3>
       </div>
       <p class="descricao">
-          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat eveniet accusantium minus nisi dignissimos temporibus aliquid enim velit, sapiente totam excepturi, cupiditate error? Quibusdam, molestias accusamus. Nesciunt, ex cum!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat eveniet accusantium minus nisi dignissimos temporibus aliquid enim velit, sapiente totam excepturi, cupiditate error? Quibusdam, molestias accusamus. Nesciunt, ex cum! -->
-          Me chamo Alex Djonata, tenho 18 anos e sou apaixonado por tecnologias e ciência.<br>
-          Desde pequeno eu sempre gostei de computação e cada vez mais fui criando vontade de entender como as coisas funcionavam,
-          para uma simples criança curiosa aquilo era <b>Mágica</b>.<br>
-          Desde então fui cada vez mais pesquisando e estudando por conta própria, tenho certeza que no futuro vou contar aquelas
-          histórinhas para os meus netinhos, de como eu comecei a programar haha<br>
-          Mesmo fazendo praticamente grande porcentagem do trabalho, eu sempre gostei de trabalho em equipe, ter pessoas por perto
-          que motivam você a continuar e solucionar problemas, tornam o trabalho muito mais produtivo e legal! <br>
-          Atualmente eu estou aprendendendo novas tecnologias sobre o desenvolvimento web (<a href="#conhecimentos">.</a>) e minha meta para esse ano de 2020 é conseguir meu primeiro emprego na área!
+        Me chamo Alex Djonata, tenho 18 anos e sou apaixonado por tecnologia e ciência. <br> Desde pequeno eu sempre gostei de computação e cada vez mais fui criando vontade de entender como as coisas funcionavam, para uma simples criança curiosa aquilo era mágica. <br> Desde então fui cada vez mais pesquisando e estudando por conta própria, tenho certeza que no futuro vou contar aquelas historinhas para os meus netinhos, de como eu comecei a programar haha <br> Mesmo fazendo praticamente grande porcentagem do trabalho, eu sempre gostei de trabalho em equipe, ter pessoas por perto que motivam você a continuar e solucionar problemas, tornam o trabalho muito mais produtivo e legal! <br> Atualmente estou aprendendendo novas tecnologias no meio web e trabalhando com VueJs! :)
       </p>
+      <span class='quad circle-radius-t4'></span>
       <span class='line'></span>
     </section>
 
-    <section class="conhecimentos">
+    <!-- CONHECIMENTOS -->
+    <section class="conhecimentos container">
       <h3 class='title'><b> CONHECIMENTOS </b> </h3>
       <div class='tecnologias'>
-        <img src="img/conhecimentos/css3.png" alt="CSS3" class="icon">
-        <img src="img/conhecimentos/jquery.png" alt="jQuery" class="icon circle-radius-t1">
-        <img src="img/conhecimentos/nodejs.png" alt="Node.js" class="icon">
         <img src="img/conhecimentos/html5.png" alt="HTML5" class="icon">
+        <img src="img/conhecimentos/vue.png" alt="VueJs" class="icon">
+        <img src="img/conhecimentos/php7.png" alt="PHP7" class="icon circle-radius-t1">
+        <img src="img/conhecimentos/nodejs.png" alt="Node.js" class="icon">
+        <img src="img/conhecimentos/css3.png" alt="CSS3" class="icon">
         <img src="img/conhecimentos/react.png" alt="React JS" class="icon circle-radius-t1">        
         <img src="img/conhecimentos/react-native.png" alt="React Native" class="icon circle-radius-t1">        
         <img src="img/conhecimentos/javascript.png" alt="JavaScript" class="icon">
       </div>
       <p class='detalhes'>
-        Comecei na programação quando tinha 14 anos, criando simples Mods com JavaScript para o Mineraft Pocket Edition.<br>
-        A partir dai migrei para o Desenvolvimento Web, estudando linguagens de front-end como HTML5, CSS3 e JavaScript, e também algumas bibliotecas como o jQuery.<br>
-        Com o passar do tempo comecei a estudar PHP 7 para aprender a criar sistemas, fiz vários projetos e adquiri um bom conhecimento!<br>
-        Atualmente estou estudando tecnologias que usam o JavaScript, sendo elas NodeJs, ReactJs e React-Native e estou decidido a estudar o máximo sobre elas!<br>
+        Comecei na programação quando tinha 14 anos, criando simples mods com JS para o Mineraft Pocket Edition.<br>
+        Apartir dai migrei pra o desenvolvimento web, estudando linguagens de front-end como HTML, CSS, JavaScript e também algumas bibliotecas como o jQuery.<br>
+        O tempo passou e eu comecei a estudar PHP para aprender a criar sistemas, fiz vários projetos e adquiri um bom conhecimento.
+        Atualmente estou estudando e desenvolvendo projetos com as algumas tecnologias como o Node, React/React-Native, Vue e também algumas outras bibliotecas!<br>
       </p>
     </section>
 
-    <section class="prototipos">
-      <h3 class='title'> <b>PROTÓTIPOS</b> </h3>
+    <!-- PROJETOS EM DESTAQUE -->
+    <section class="projetos-destaque container">
+      <h3 class='title'> <b>PROJETOS EM DESTAQUE</b> </h3>
+      <ul class='list'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section class="contatos">
+      <!-- <h3 class='title'> <b>CONTATOS</b> </h3> -->
     </section>
   </main>
 
