@@ -91,7 +91,6 @@ function exibir(data, type) {
   }
   else if(type == 'redes') {
     data.forEach(rede => {
-      console.log(rede)
       adicionarRede(rede)
     })   
   }

@@ -264,6 +264,7 @@
   cursor: default;
 }
 .cartao a {
+  display: none;
   width: 45px;
   position: absolute;
   margin-top: calc(220px / 2 + 85px);
