@@ -46,7 +46,7 @@ function adicionarProjeto(projeto) {
 
 function adicionarDestaque(projeto) {
   const li = newElem('li')
-  li.style.backgroundImage = `url(img/screenshots/${projeto.screenshot})`
+  li.style.backgroundImage = projeto.externalScreenshot ? `url(${projeto.screenshot})` : `url(img/screenshots/${projeto.screenshot})`
   
   const info = newElem('div', 'info')
   info.textContent = projeto.nome

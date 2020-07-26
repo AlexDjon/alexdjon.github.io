@@ -7,7 +7,8 @@
       "img": "https://raw.githubusercontent.com/AlexDjon/alexdjon.github.io/master/img/projetos/anotatudo.png", 
       "radius": true,
       "externalImg": true,
-      "screenshot": "anotatudo.png",
+      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/anotatudo.png?raw=trueanotatudo.png",
+      "externalScreenshot": true,
       "destaque": true
     },    
     { 
@@ -16,7 +17,8 @@
       "link": "https://yopopo.site/", 
       "img": "yopopo.png",  
       "radius": true,
-      "screenshot": "yopopo.png",
+      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/yopopo.png?raw=true",
+      "externalScreenshot": true,
       "destaque": true
     },
     { 
@@ -41,7 +43,8 @@
       "dev": true,
       "link": "", 
       "img": "",
-      "screenshot": "mpdaiher.png",
+      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/mpdaiher.png?raw=true",
+      "externalScreenshot": true,
       "destaque": true      
     }
   ],
