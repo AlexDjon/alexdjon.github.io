@@ -30,7 +30,7 @@ function adicionarProjeto(projeto) {
   })
 
   const img = newElem('img', projeto.radius ? 'circle-radius-t3' : '')
-  img.src = `img/projetos/${projeto.img}`
+  img.src = projeto.externalImg ? projeto.img : `img/projetos/${projeto.img}`
   
   const title = newElem('h3')
   title.textContent = projeto.nome

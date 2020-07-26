@@ -3,7 +3,10 @@
     { 
       "nome": "Anota Tudo", 
       "link": "https://github.com/AlexDjon/Anota-Tudo", 
-      "img": "anotatudo.png", "radius": true },    
+      "img": "https://raw.githubusercontent.com/AlexDjon/alexdjon.github.io/master/img/projetos/anotatudo.png", 
+      "radius": true,
+      "externalImg": true
+    },    
     { 
       "nome": "YoPopo", 
       "link": "https://yopopo.site/", 
