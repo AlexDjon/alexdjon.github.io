@@ -410,7 +410,7 @@
 }
 @media (max-width: 800px) {
   .conhecimentos {
-    padding-bottom: 0px;
+    padding-bottom: 80px;
   }
   .conhecimentos .tecnologias {
     flex-wrap: wrap;
