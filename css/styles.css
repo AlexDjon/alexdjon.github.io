@@ -266,8 +266,8 @@
 .cartao a {
   width: 45px;
   position: absolute;
-  margin-top: calc(220px / 2 - 10px);
-  margin-left: calc(220px / 2 - 20px);
+  margin-top: calc(220px / 2 + 85px);
+  margin-left: calc(220px / 2 + 70px);
 
   text-align: center;
   background: var(--purple-t1);
@@ -344,6 +344,7 @@
   font-weight: 500;
 }
 .sobre .line {
+  display: none;
   width: 2px;
   height: 80px;
   position: absolute;
