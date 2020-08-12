@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 100%;
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+:root {
+  --verdeW: #26522e;
+  --verdeW2: #204226;
+  --verdeW-semi: #c6e0cc;
+  --verde: #32a852;
+  --black: #232323;
+  --black2: #414141;
+  --white: #ffffff;
+  --grey: #3b3b3b;
+  --shadow: -4px 4px 8px 0px rgba(10, 10, 10, 0.27);
+  --cabecalhoY: 75px;
+  --barrY: 45px;
+}
+
+/* CABECALHO */
+.cabecalho {
+  width: 100%;
+  height: var(--cabecalhoY);
+  background: var(--verdeW);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho .logo {
+  height: 45px;
+}
+
+.cabecalho .modulos {
+  display: flex;  
+}
+.cabecalho .modulos button {
+  margin: 0 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--verdeW2);
+  color: var(--white);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+.cabecalho .modulos button:hover {
+  filter: brightness(90%);
+}
+.cabecalho .user {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px var(--black);
+
+  background-image: url(../img/avatar1.png);
+  background-size: cover;
+  background-position: center center;
+
+  cursor: pointer;
+}
+
+/* AREAS */
+.areas {
+  display: none;
+  min-width: 180px;
+  position: absolute;
+  top: var(--cabecalhoY);
+  right: 0;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+.areas.ativo {
+  display: block;
+}
+.areas ul {
+  list-style: none;
+  padding: 10px 20px 10px 40px;
+}
+.areas ul li {
+  margin: 17px 0;
+  font-size: 15px;
+  color: var(--black2);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.areas ul li:hover {
+  color: var(--black);
+}
+.areas ul li i {
+  margin-right: 8px;
+  font-size: 17px;
+  color: var(--verdeW);
+}
+
+
+/* NAVBAR */
+.navbar {
+  width: 210px;
+  height: calc(100vh - var(--cabecalhoY));
+  background: var(--white);
+  /* border-bottom: solid 20px var(--verdeW); */
+}
+.navbar .menu {
+  padding: 50px 0 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+}
+.navbar .menu li {
+  margin: 14px 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--black2);
+  font-size: 14px;
+  padding: 7px 3px 10px 10px;
+  /* border-bottom: solid 1px var(--white);
+  border-radius: 0 0 5px 0; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+.navbar .menu li i {
+  margin-left: 7px;
+  color: var(--black2);
+}
+.navbar .menu li i {
+  color: var(--verdeW);
+}
+.navbar .close {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+  height: 40px;
+  background: var(--black2);
+  left: 184.92px;
+  margin: 0;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+.navbar .close:hover {
+  filter: brightness(110%);
+}
+.navbar .close i {
+  color: var(--white);
+}
+
+
+/* CONTEUDO */
+.conteudo {
+  width: 100%;
+  height: calc(100vh - var(--cabecalhoY));
+
+  display: flex;
+}
+
+.meio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.meio .barra {
+  width: 100%;
+  height: var(--barrY);
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background-color: var(--verdeW-semi);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+.meio .barra div#separator span i {
+  margin: 0 5px;
+  color: var(--verdeW);
+} */
+.meio .barra .caminho {
+  height: var(--barrY);
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.meio .barra .caminho li {
+  height: var(--barrY);
+  margin: 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+}
+.meio .barra .caminho li:not(#separator) {
+  cursor: pointer;
+}
+
+.meio .barra .caminho li#separator {
+  color: var(--verdeW);
+}
+
+.list-buttons {
+  margin: 0 10px;
+  display: flex;
+}
+.list-buttons button {
+  height: 35px;
+  width: 45px;
+  margin: 0 6px 0 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 1px var(--white); */
+  background: var(--verdeW2);
+  cursor: pointer;
+}
+.list-buttons button i {
+  font-size: 19px;
+  color: var(--white);
+}
+.list-buttons button:nth-child(1) {
+  background: #db2809;
+}
+.list-buttons button:nth-child(2) {
+  background: #1d7fcf;
+}
+.list-buttons button:nth-child(3) {
+  background: #11a333;
+}
+
+/* VIEWER */
+.viewer {
+  width: 98%;
+  margin: 6px 1%;
+  padding: 20px;
+  height: calc(100vh - calc(var(--cabecalhoY) + var(--barrY)) - 12px);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.viewer img {
+  width: 100%;
+}
