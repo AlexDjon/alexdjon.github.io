@@ -8,7 +8,9 @@
 
   <link rel="shotcut icon" href="https://wikidados.com.br/assets/wiki/img/logos/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;600&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;600&family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -38,18 +40,27 @@
 
   <main class="conteudo">
     <nav class="navbar">
-      <div class="search">
+      <!-- <div class="search">
         <input type="text" placeholder="Pesquisar">
-      </div>
+      </div> -->
       <ul class="menu">
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
-        <li>Ir para local <i class="material-icons">chevron_right</i></li>
+        <li onclick="changeLocal('img')">
+          <i class="material-icons">list</i>
+          Tabela exemplo
+          <i class="material-icons">chevron_right</i>
+        </li>
+        <li onclick="changeLocal('cards')">
+          <i class="material-icons">view_carousel</i>
+          Cards exemplo
+          <i class="material-icons">chevron_right</i>
+        </li>
+        <li onclick="changeLocal('bigpanel')">
+          <i class="material-icons">trending_down</i>
+          Painel exemplo
+          <i class="material-icons">chevron_right</i>
+        </li>
       </ul>
-      
+
       <button class="close">
         <i class="material-icons">chevron_left</i>
       </button>
@@ -100,13 +111,45 @@
         </div>
       </div>
 
-      <div class="viewer">
+      <div class="viewer" id="img">
         <img src="img/tabela-exemplo.png" alt="Tabela">
+      </div>
+
+      <div class="viewer" id="cards">
+        <div class="cards">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+
+      <div class="viewer" id="bigpanel">
+        <div class="bigpanel"></div>
       </div>
     </div>
 
   </main>
 
+  <aside class="change-color">
+    <select id="local" onchange="changeColor('select')">
+      <option value="--verdeW">Cor Principal</option>
+      <option value="--verdeW2">Cor Secundária</option>
+      <option value="--toolbar">Barra Dinâmica</option>
+      <option value="--fundo">Fundo</option>
+      <option value="--black">Preto Forte</option>
+      <option value="--black2">Preto Fraco</option>
+      <option value="--white">Branco</option>
+      <option value="--white2">Branco Secundário</option>
+      <option value="--grey">Cinza</option>
+      <option value="--btn-close">Botão Fechar</option>
+      <option value="--btn-edit">Botão Editar</option>
+      <option value="--btn-save">Botão Salvar</option>
+    </select>
+    <input type="color" id="novaCor" onchange="changeColor()">
+  </aside>
   <script src="js/scripts.js"></script>
 </body>
 
