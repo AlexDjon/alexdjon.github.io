@@ -62,10 +62,10 @@ function changeLocal(newLocal) {
 }
 
 
+const styles = getComputedStyle(document.documentElement);
+
 function changeColor (loader) {
   const varCss = getItem('#local').value
-
-  const styles = getComputedStyle(document.documentElement);
 
   if(loader == 'select') {
     getItem('#novaCor').value = String(styles.getPropertyValue(varCss)).trim()
@@ -73,4 +73,18 @@ function changeColor (loader) {
   const color = getItem('#novaCor').value
 
   document.documentElement.style.setProperty(varCss, color)
+}
+
+getItem('#importColor').addEventListener('change', function(e) {
+  changeColorNew(e)
+})
+
+function changeColorNew (e) {
+  console.log(e)
+  const varCss = e.target.value
+
+  getItem('#novaCor').value = String(styles.getPropertyValue(varCss)).trim()
+
+  changeColor()
+  
 }
