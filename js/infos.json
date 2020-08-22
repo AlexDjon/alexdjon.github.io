@@ -4,11 +4,11 @@
       "nome": "Anota Tudo", 
       "recente": true,
       "link": "https://github.com/AlexDjon/Anota-Tudo", 
-      "img": "https://raw.githubusercontent.com/AlexDjon/alexdjon.github.io/master/img/projetos/anotatudo.png", 
+      "img": "anotatudo.png", 
       "radius": true,
-      "externalImg": true,
-      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/anotatudo.png?raw=trueanotatudo.png",
-      "externalScreenshot": true,
+      "externalImg": false,
+      "screenshot": "anotatudo.png",
+      "externalScreenshot": false,
       "destaque": true
     },    
     { 
@@ -17,8 +17,8 @@
       "link": "https://yopopo.site/", 
       "img": "yopopo.png",  
       "radius": true,
-      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/yopopo.png?raw=true",
-      "externalScreenshot": true,
+      "screenshot": "yopopo.png",
+      "externalScreenshot": false,
       "destaque": true
     },
     { 
@@ -43,8 +43,8 @@
       "dev": true,
       "link": "", 
       "img": "",
-      "screenshot": "https://github.com/AlexDjon/alexdjon.github.io/blob/master/img/screenshots/mpdaiher.png?raw=true",
-      "externalScreenshot": true,
+      "screenshot": "mpdaiher.png",
+      "externalScreenshot": false,
       "destaque": true      
     }
   ],

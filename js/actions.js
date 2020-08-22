@@ -1,16 +1,9 @@
-/** Projetos **/
-// const projetos = [
-//   { nome: 'Anota Tudo', link: 'https://github.com/AlexDjon/Anota-Tudo', img: 'anotatudo.png', radius: true },
-//   { nome: 'YoPopo', link: 'https://yopopo.site/', img: 'yopopo.png',  radius: true},
-//   { nome: 'ChocoFestas', link: 'https://welcometoalex.space/choco/', img: 'chocofestas.png' },
-//   { nome: 'OmniStack 11.0', link: 'https://github.com/AlexDjon/Semana-OmniStack-11.0/', img: 'semanaomnistack11.png' },
-// ]
-
 function newElem(type, classes) {
   const elem = document.createElement(type)
   if(classes) {
     elem.classList.add(classes)
   }
+  
   return elem
 }
 
